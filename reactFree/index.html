@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta author="Patrik Šimunič" />
+
+        <title>Moll & Šimunič</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" />
+        <link rel="stylesheet" href="./ms.css" />
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
+    </head>
+    <body>
+        <div class="parallaxSection">
+            <div style="background-image: url('./img/00.jpg');"></div>
+        </div>
+        <div class="parallaxSection">
+            <div style="background-image: url('./img/01.jpg');"></div>
+        </div>
+        <div class="parallaxSection">
+            <div style="background-image: url('./img/02.jpg');"></div>
+        </div>
+        <div class="parallaxSection">
+            <div style="background-image: url('./img/03.jpg');"></div>
+        </div>
+        <script>
+	        var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+        	new ScrollMagic.Scene({triggerElement: "#p0"})
+					.setTween("#p0 > div", {y: "80%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
+
+	        new ScrollMagic.Scene({triggerElement: "#p1"})
+					.setTween("#p1 > div", {y: "80%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
+
+	        new ScrollMagic.Scene({triggerElement: "#p2"})
+					.setTween("#p2 > div", {y: "80%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
+
+            new ScrollMagic.Scene({triggerElement: "#p3"})
+					.setTween("#p3 > div", {y: "80%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
+        </script>
+    </body>
+</html>
