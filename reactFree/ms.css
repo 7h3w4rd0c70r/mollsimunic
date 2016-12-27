@@ -3,35 +3,66 @@
 	font-family: "Helvetica Neue LT Std";
 	src: url("./font.ttf");
 }
-    
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./fonts/Montserrat-Light.ttf");
+}
+
 body {
-	font-family: "Helvetica Neue LT Std", serif;
+	font-family: "Montserrat" !important;
+}
+
+.ui.container.text {
+	font-family: "Montserrat" !important;
+}
+
+svg.brand {
+	fill: #333;
+	width: 150px;
+	height: 150px;
+}
+
+.brand:hover {
+	fill: #555;
+	color: #555;
 }
 
 .brand.name {
-	font-size: 30pt;
-	padding: 0px 0px 0px 25px;
+	font-size: 40pt;
+	padding: 0px 0px 0px 30px;
 	color: #333;
+	font-family: "Helvetica Neue LT Std", serif;
 }
 
-.parallaxSection {
-    height: 100vh;
-    overflow: hidden;
-}
-
-.parallaxSection > div {
-	height: 200%;
-	position: relative;
-	top: -100%;
-	background-repeat: no-repeat;
-}
-
-.divider {
-	background-color: #333;
+header > .bg {
+	background-image: url('./img/blueprint.jpg');
+	filter: brightness(50%);
+	background-repeat: none;
+	background-size: 100vw auto;
 	width: 100%;
-	height: 5vh;
+	height: 100%;
 }
 
-.svg {
-	fill: red;
+header {
+	width: 100vw;
+	height: 70vh;
+}
+
+span.header {
+	color: white;
+	font-size: 30pt;
+	position: absolute;
+	top: 20%;
+}
+
+article {
+	width: 100vw;
+}
+
+footer {
+	width: 100vw;
+	height: 40vh;
+	background-color: #333;
+	color: white;
 }
