@@ -1,27 +1,31 @@
 
+var
+l = 'en',
+dictionary = {
+    'en': {
+        'header_main': 'Live in your dream',
+        'header_why_us': 'Why us'
+    },
+    'cs': {
+        'header_main': 'Postave si svůj sen',
+        'header_why_us': 'Proč nás'
+    }
+},
+w = function (word) {
+    return dictionary[l][word];
+},
+loadDictionary = function () {
+    $('[data-w]').each(function () {
+        $(this).html(w($(this).data('w')));
+    });
+};
 
+$(document).ready(function () {
+    loadDictionary();
+    $('.lang').click(function () {
+        l = $(this).data('lang');
+        loadDictionary();
+    });
+});
 
-/*
-var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
-
-new ScrollMagic.Scene({triggerElement: "#p0"})
-	.setTween("#p0 > div", {y: "80%", ease: Linear.easeNone})
-	.addIndicators()
-	.addTo(controller);
-
-new ScrollMagic.Scene({triggerElement: "#p1"})
-	.setTween("#p1 > div", {y: "80%", ease: Linear.easeNone})
-	.addIndicators()
-	.addTo(controller);
-
-new ScrollMagic.Scene({triggerElement: "#p2"})
-	.setTween("#p2 > div", {y: "80%", ease: Linear.easeNone})
-	.addIndicators()
-	.addTo(controller);
-
-new ScrollMagic.Scene({triggerElement: "#p3"})
-	.setTween("#p3 > div", {y: "80%", ease: Linear.easeNone})
-	.addIndicators()
-	.addTo(controller);
-	*/
 
