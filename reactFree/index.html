@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
     <head>
@@ -8,6 +8,7 @@
         <title>Moll & Šimunič</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" href="./ms.css" />
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -16,12 +17,21 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
         <script src="./ms.js"></script>
     </head> 
     <body>
+        
+        <div class="ui dimmer" id="dimmer">
+            <div class="content">
+                <div class="center">
+                    <img src="" width="75%" id="dimmerImage" />
+                </div>
+            </div>
+        </div>
 
         <nav id="menu" class="ui secondary menu fixed">
-            <div class="ui container">
+            <div class="ui container text">
                 <div class="ui item">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.000000 300.000000" preserveAspectRatio="xMidYMid meet" class="brand">
                         <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -34,10 +44,6 @@
                         Moll & Šimunič
                     </span>
                 </div>
-                <div>
-                    <span class="lang" data-lang="en"><i class="flag gb"></i> English</span>
-                    <span class="lang" data-lang="cs"><i class="flag cz"></i> Česky</span>
-                </div>
             </div>
         </nav>
 
@@ -45,25 +51,103 @@
             <div class="bg"></div>
                 <div class="ui container text">
                     <span class="header">
-                        <span data-w="header_main"></span>
+                        Moll & Šimunič
                     </span>
                 </div>
             </div>
         </header>
         
-        <article id="content">
-            <div class="section ui container text">
-                <h1 class="">
-                    <span data-w="header_why_us"></span>
-                </h1>
+        <div class="segment">
+            <div class="ui equal width grid">
+                <div class="column">
+                    <div class="ui text container" style="padding: 50px 75px 0px 75px;">
+                        <h1 class="ui header">Co nabízíme</h1>
+                        <p>
+                            Nabízíme zpracování projektových dokumentací, vč. inženýrské činnosti v oblasti občanské a průmyslové výstavby, bydlení i dopravy. Za námi je více než dvacetiletá praxe s mnoha úspěšně realizovanými projekty v regionu Valašsko, Zlínsko a Ostravsko.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <img class="ui centered image" src="./img2.jpg">
+                </div>
             </div>
-        </article>
+        </div>
+        <div class="segment">
+            <div class="ui equal width grid">
+                <div class="column">
+                    <img class="ui centered image" src="./img1.jpg">
+                </div>
+                <div class="column">
+                    <div class="ui text container" style="padding: 50px 75px 0px 75px;">
+                        <h1 class="ui header">Náš tým</h1>
+                        <p>
+                            S naším týmem spolupracuje řada zkušených profesních odborníků, kteří s námi sdílí nadšení pro tvůrčí práci. Nabýzíme rycholost, spolehlivost, reálné termíny, pracujeme v dohodnutých cenách, samozřejmostí je BIM projektování.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="segment">
+            <div class="carousel1 slider1">
+                <div><img src="./img/slider10.jpg" class="slider slider1"></div>
+                <div><img src="./img/slider1.jpg" class="slider slider1"></div>
+                <div><img src="./img/slider2.jpg" class="slider slider1"></div>
+                <div><img src="./img/slider9.jpg" class="slider slider1"></div>
+                <div><img src="./img/slider3.jpg" class="slider slider1"></div>
+                <div><img src="./img/slider4.jpg" class="slider slider1"></div>
+                <div><img src="./img/slider7.jpg" class="slider slider1"></div>
+                <div><img src="./img/slider5.jpg" class="slider slider1"></div>
+            </div>
+            <div class="carousel2 slider2">
+                <div><img src="./img/slider6.jpg" class="slider slider2"></div>
+                <div><img src="./img/slider1.jpg" class="slider slider2"></div>
+                <div><img src="./img/slider7.jpg" class="slider slider2"></div>
+                <div><img src="./img/slider8.jpg" class="slider slider2"></div>
+                <div><img src="./img/slider4.jpg" class="slider slider2"></div>
+                <div><img src="./img/slider9.jpg" class="slider slider2"></div>
+                <div><img src="./img/slider10.jpg" class="slider slider2"></div>
+                <div><img src="./img/slider5.jpg" class="slider slider2"></div>
+            </div>
+            <div class="carousel3 slider3">
+                <div><img src="./img/slider5.jpg" class="slider slider3"></div>
+                <div><img src="./img/slider4.jpg" class="slider slider3"></div>
+                <div><img src="./img/slider2.jpg" class="slider slider3"></div>
+                <div><img src="./img/slider7.jpg" class="slider slider3"></div>
+                <div><img src="./img/slider10.jpg" class="slider slider3"></div>
+                <div><img src="./img/slider9.jpg" class="slider slider3"></div>
+                <div><img src="./img/slider3.jpg" class="slider slider3"></div>
+                <div><img src="./img/slider6.jpg" class="slider slider3"></div>
+                <div><img src="./img/slider1.jpg" class="slider slider3"></div>
+                <div><img src="./img/slider8.jpg" class="slider slider3"></div>
+            </div>
+        </div>
         
         <footer class="footer">
             <div class="ui container text">
-                <i class="icon mail outline"></i> js.mollsimunic@gmail.com<br>
-                <i class="icon mobile"></i> +420 608 929 359<br>
-                <i class="icon map outline"></i> Jiráskova 914, Vsetín, 755 01<br>
+                <div class="ui equal width grid">
+                    <div class="column">
+                        <h3 class="ui header" style="color: white;">
+                            Ing.&nbsp;Arch.&nbsp;Miroslav&nbsp;Moll
+                            <div class="sub header" style="color: #b6b5b5;">
+                                Autorizovaný&nbsp;architekt&nbsp;ČKA&nbsp;02835
+                            </div>
+                        </h3>
+                        <i class="icon mail outline" style="color: #040303;"></i>&nbsp;mm@mollsimunic.com<br>
+                        <i class="icon mobile" style="color: #040303;"></i>&nbsp;+420&nbsp;604&nbsp;850&nbsp;939<br>
+                        <i class="icon map outline" style="color: #040303;"></i>&nbsp;Jiráskova&nbsp;914,&nbsp;Vsetín,&nbsp;755&nbsp;01<br>
+                    </div>
+                    <div class="column">
+                        <h3 class="ui header" style="color: white;"><!-- ##040303; -->
+                            Jan&nbsp;Šimunič
+                            <div class="sub header" style="color: #b6b5b5;">
+                                Autorizovaný&nbsp;technik&nbsp;ČKAIT&nbsp;1301666
+                            </div>
+                        </h3>
+                        <i class="icon mail outline" style="color: #040303;"></i>&nbsp;js@mollsimunic.com<br>
+                        <i class="icon mobile" style="color: #040303;"></i>&nbsp;+420&nbsp;608&nbsp;929&nbsp;359<br>
+                        <i class="icon map outline" style="color: #040303;"></i>&nbsp;Jiráskova&nbsp;914,&nbsp;Vsetín,&nbsp;755&nbsp;01<br>
+                    </div>
+                </div>
             </div>
         </footer>
 
